@@ -1,0 +1,43 @@
+body{
+ background-color: cyan;
+
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+}
+
+h3{
+    text-align: center;
+
+}
+
+.silver{
+    color: hsl(0,0% , 75%);
+
+}
+.fuchsia{
+    color: #ff00ff;
+}
+.bright-orange{
+    color: rgb(255, 165, 0);
+}
+
+hr{
+    border-top: 1px solid white;
+
+}
+.address{
+    margin-top: 1px;
+}
+.colors{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.rates{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}

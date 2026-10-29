@@ -1,0 +1,100 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f3f8;
+    color: #222;
+}
+
+
+.container {
+    background-color: #5043e8;
+    color: white;
+    padding: 15px 25px;
+}
+
+
+.Website h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+
+.menu-toggle {
+    display: none;
+    padding: 8px 15px;
+    background-color: white;
+    color: #5043e8;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.menu-item {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+
+.content {
+    padding: 25px;
+}
+
+.content h1 {
+    font-size: 24px;
+}
+
+.content p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 20px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-item {
+        padding: 12px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+}
